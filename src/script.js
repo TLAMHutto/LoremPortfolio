@@ -1,4 +1,5 @@
-import './style.css'
+import './css/style.css'
+import './css/navigation.css'
 import * as THREE from 'three'
 import * as dat from 'lil-gui'
 import gsap from 'gsap'
@@ -6,23 +7,23 @@ import { MathUtils } from 'three';
 /**
  * Debug
  */
-const gui = new dat.GUI()
+// const gui = new dat.GUI()
 
 const parameters = {
     materialColor: '#fafafa',
     sphereColor: '#00dfff',
 }
 
-gui
-    .addColor(parameters, 'materialColor')
-    .onChange(() =>{
-        material.color.set(parameters.materialColor)
-    })
-gui
-    .addColor(parameters, 'sphereColor')
-    .onChange(() =>{
-        materialShpere.color.set(parameters.sphereColor)
-    })
+// gui
+//     .addColor(parameters, 'materialColor')
+//     .onChange(() =>{
+//         material.color.set(parameters.materialColor)
+//     })
+// gui
+//     .addColor(parameters, 'sphereColor')
+//     .onChange(() =>{
+//         materialShpere.color.set(parameters.sphereColor)
+//     })
 // gui.addColor(parameters, 'particalsColor')
 //     .onChange(() =>{
 //         particalMaterial.color.set(parameters.particalsColor)
@@ -151,7 +152,7 @@ const fov = 50;
 const planeAspectRatio = 16 / 9;
 window.addEventListener('resize', () =>
 {
-    console.log(window.innerWidth)
+    
     
     if (window.innerWidth< 994){
         firstGroup.visible = false

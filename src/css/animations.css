@@ -1,0 +1,12 @@
+@keyframes intro {
+    0%{
+        transform: scale(.1);
+    }
+    50%{
+        transform: scale(1.4);
+        text-shadow: 0 0 20px rgb(0, 255, 208);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
