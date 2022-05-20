@@ -2,7 +2,7 @@ import './style.css'
 import * as THREE from 'three'
 import * as dat from 'lil-gui'
 import gsap from 'gsap'
-
+import { MathUtils } from 'three';
 /**
  * Debug
  */
@@ -139,15 +139,58 @@ particlasGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 
  */
 const sizes = {
     width: window.innerWidth,
-    height: window.innerHeight
+    height: window.innerHeight,
+    // w: window.innerWidth,
+    // h: window.innerHeight,
+    // firstGroupSize: firstGroup.scale.set(1,1,1),
+    // firstGroupPosition: firstGroup.position.set(0,0,
 }
 
+
+const fov = 50;
+const planeAspectRatio = 16 / 9;
 window.addEventListener('resize', () =>
 {
+    console.log(window.innerWidth)
+    
+    if (window.innerWidth< 994){
+        firstGroup.visible = false
+        secondGroup.scale.set(.5,.5,.5)
+        secondGroup.position.set(1,-3,1)
+        thirdGroup.visible = false
+    } else {
+        firstGroup.visible = true,
+        secondGroup.scale.set(1,1,1)
+        secondGroup.position.set(0,0,0)
+        thirdGroup.visible = true
+    }
     // Update sizes
     sizes.width = window.innerWidth
     sizes.height = window.innerHeight
-
+    // sizes.w = window.innerWidth
+    // sizes.h = window.innerHeight
+    // sizes.firstGroupSize = firstGroup.scale.set((sizes.width/sizes.height)*1.5,(sizes.height/sizes.width),1)
+    // sizes.firstGroupPosition = firstGroup.position.set((1*sizes.w),0,0)
+    // if (camera.aspect > planeAspectRatio) {
+	// 	// window too large
+	// 	const cameraHeight = Math.tan(MathUtils.degToRad(fov / 2));
+	// 	const ratio = camera.aspect / planeAspectRatio;
+	// 	const newCameraHeight = cameraHeight / ratio;
+	// 	camera.fov = MathUtils.radToDeg(Math.atan(newCameraHeight)) * 2;
+	// } else {
+	// 	// window too narrow
+	// 	camera.fov = fov;
+	// }
+    // if (camera.aspect > planeAspectRatio) {
+	// 	// window too large
+	// 	camera.fov = fov;
+	// } else {
+	// 	// window too narrow
+	// 	const cameraHeight = Math.tan(MathUtils.degToRad(fov / 2));
+	// 	const ratio = camera.aspect / planeAspectRatio;
+	// 	const newCameraHeight = cameraHeight / ratio;
+	// 	camera.fov = MathUtils.radToDeg(Math.atan(newCameraHeight)) * 2;
+	// }
     // Update camera
     camera.aspect = sizes.width / sizes.height
     camera.updateProjectionMatrix()

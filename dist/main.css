@@ -34,5 +34,10 @@ section:nth-child(odd)
 {
     justify-content: flex-end;
 }
+@media only screen and (max-width: 600px) {
+    .webgl {
+      width: 379px;
+    }
+  }
 
 /*# sourceMappingURL=main.css.map*/
