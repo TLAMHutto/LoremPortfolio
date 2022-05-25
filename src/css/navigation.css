@@ -139,6 +139,9 @@
   outline: auto;
 }
 a{
-  font-family: 'Montserrat', sans-serif;
+  
   text-transform: lowercase;
+}
+span{
+  font-family: 'Roboto Mono', monospace;
 }

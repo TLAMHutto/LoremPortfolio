@@ -10,3 +10,23 @@
         transform: scale(1);
     }
 }
+@keyframes shadowPulse{
+    0%{
+        text-shadow: 0 0 5px rgb(255, 0, 230);
+    }
+    50%{
+        text-shadow: 0 0 20px rgb(255, 0, 255);
+    }
+    100%{
+        text-shadow: 0 0 5px rgb(255, 0, 217);
+    }
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00e6b0, 0 0 40px #00e6c7, 0 0 50px #00c4e6, 0 0 60px #009de6, 0 0 70px #0289a1;
+    }
+    
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00ffc3, 0 0 40px #00cbe6, 0 0 50px #016bff, 0 0 60px #002efc, 0 0 70px #021fa1;
+    }
+  }

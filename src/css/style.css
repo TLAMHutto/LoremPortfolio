@@ -29,22 +29,28 @@ html{
     font-size: 7vmin;
     padding-left: 10%;
     padding-right: 10%;
+    
 }
 
 section:nth-child(odd)
 {
     justify-content: flex-end;
 }
-h1{
+h1, h2{
     color: rgb(255, 255, 255);
     animation-name: intro;
     animation-duration: 3s;
     /* border-bottom: 2px solid rgb(0, 255, 225); */
 }
-h1:after{
+h1:after, h2:after{
     content: "";
     display: block;
     width: 50%;
     padding-top: 20px;
     border-bottom: 2px solid rgb(0, 255, 242);
+}
+.designer1{
+    color: aqua;
+    animation: glow 1s ease-in-out infinite alternate;
+    
 }
