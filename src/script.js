@@ -7,13 +7,13 @@ import { MathUtils } from 'three';
 /**
  * Debug
  */
-// const gui = new dat.GUI()
+
 
 const parameters = {
     materialColor: '#fafafa',
     sphereColor: '#00dfff',
 }
-
+// const gui = new dat.GUI()
 // gui
 //     .addColor(parameters, 'materialColor')
 //     .onChange(() =>{
@@ -28,7 +28,7 @@ const parameters = {
 //     .onChange(() =>{
 //         particalMaterial.color.set(parameters.particalsColor)
 //     }
-// )
+
 
 /**
  * Base
@@ -46,7 +46,7 @@ const heightTexture = textureLoader.load('./textures/Metal/height.png')
 const metalTexture = textureLoader.load('./textures/Metal/metallic.jpg')
 const aoTexture = textureLoader.load('./textures/Metal/ao.jpg')
 const roughTexture = textureLoader.load('./textures/Metal/roughness.jpg')
-const matCapTexture = textureLoader.load('./textures/MatCap/silver.png')
+const matCapTexture = textureLoader.load('./textures/MatCap/2.png')
 const matCapMaterialSphere = textureLoader.load('./textures/MatCap/red.png')
 // gradientTexture.magFilter = THREE.NearestFilter
 const material = new THREE.MeshMatcapMaterial({ 
@@ -67,7 +67,7 @@ scene.add(firstGroup, secondGroup, thirdGroup)
 const objectDistance = 4
 
 const mesh1 = new THREE.Mesh(
-    new THREE.ConeGeometry(1,1.5,4,120),
+    new THREE.ConeGeometry(1,1.5,4,240),
     material
 )
 const mesh1Sphere = new THREE.Mesh(
