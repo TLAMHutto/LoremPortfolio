@@ -305,8 +305,8 @@ const tick = () =>
     scene.add(particals)
     // cameraGroup.position.x = parallaxY * .15
     // cameraGroup.position.y = parallaxX * .15
-    cameraGroup.position.x += (parallaxX - cameraGroup.position.x) * 5 * deltaTime
-    cameraGroup.position.y += (parallaxY - cameraGroup.position.y) * 5 * deltaTime
+    cameraGroup.position.x += (parallaxX - cameraGroup.position.x)  * deltaTime
+    cameraGroup.position.y += (parallaxY - cameraGroup.position.y)  * deltaTime
     
     
     // Render
