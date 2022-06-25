@@ -55,6 +55,10 @@
     padding: 0;
 }
 
+body{
+    background-image: url(assets/images/21f884922c1ddf64.jpg);
+    background-repeat: no-repeat;
+}
 html{
     background-color: rgb(0, 0, 0)  ;
 }
@@ -113,7 +117,11 @@ h1:after, h2:after{
     font-family: 'Raleway', sans-serif;
 }
 .container{
-    border: 1px solid rgb(0, 157, 255);
+    border: 1px solid rgba(0, 157, 255, 0.247);
+    /* background-image: url("../../imgs/bg3.jpeg"); */
+    background-size: calc(100%);
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 10px;
     position: absolute;
     bottom: -25%;
