@@ -4,9 +4,8 @@ import * as THREE from 'three'
 import * as dat from 'lil-gui'
 import gsap from 'gsap'
 import { MathUtils } from 'three';
-/**
- * Debug
- */
+
+import { HexGridMaterial } from "threejs-shader-materials";
 
 
 const parameters = {
@@ -48,6 +47,10 @@ const aoTexture = textureLoader.load('./textures/Metal/ao.jpg')
 const roughTexture = textureLoader.load('./textures/Metal/roughness.jpg')
 const matCapTexture = textureLoader.load('./textures/MatCap/2.png')
 const matCapMaterialSphere = textureLoader.load('./textures/MatCap/red.png')
+
+
+
+const newmesh =  new HexGridMaterial();
 // gradientTexture.magFilter = THREE.NearestFilter
 const material = new THREE.MeshMatcapMaterial({ 
     matcap: matCapTexture,
@@ -60,6 +63,16 @@ const material = new THREE.MeshMatcapMaterial({
     
 
  })
+ const geo = new THREE.SphereGeometry(10, 64, 64);
+ const mat = new HexGridMaterial();
+ const mesh = new THREE.Mesh(geo, mat);
+ scene.add(mesh);
+
+
+
+
+
+
 const firstGroup = new THREE.Group()
 const secondGroup = new THREE.Group()
 const thirdGroup = new THREE.Group()
