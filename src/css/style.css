@@ -1,5 +1,6 @@
 @import "./animations.css";
 @import "./scrollBar.css";
+@import "./badge.css";
 *
 {
     margin: 0;
