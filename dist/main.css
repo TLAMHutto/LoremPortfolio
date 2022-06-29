@@ -49,6 +49,9 @@
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(1, 128, 135);
   }
+.container-badges{
+    transform: translateY(-300px);
+}
 *
 {
     margin: 0;
