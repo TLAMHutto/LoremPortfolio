@@ -10,6 +10,7 @@
 body{
     background-image: url(../../imgs/bg2.jpg);
     background-repeat: no-repeat;
+    z-index: 2;
 }
 html{
     background-color: rgb(0, 0, 0)  ;
@@ -20,6 +21,7 @@ html{
     top: 0;
     left: 0;
     outline: none;
+    z-index: 1;
 }
 
 
@@ -121,4 +123,9 @@ h1:after, h2:after{
 }
 .fa-github{
     font-size: 24px;
+}
+.container-badges{
+    /* transform: translateY(-300px);
+    z-index: 100;
+    position: relative; */
 }
