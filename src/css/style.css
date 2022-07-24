@@ -10,7 +10,7 @@
 body{
     background-image: url(../../imgs/bg2.jpg);
     background-repeat: no-repeat;
-    z-index: 2;
+    
 }
 html{
     background-color: rgb(0, 0, 0)  ;
@@ -21,7 +21,7 @@ html{
     top: 0;
     left: 0;
     outline: none;
-    z-index: 1;
+    
 }
 
 
@@ -71,9 +71,9 @@ h1:after, h2:after{
     font-family: 'Raleway', sans-serif;
 }
 .container{
-    border: 1px solid rgba(0, 157, 255, 0.247);
-    /* background-image: url("../../imgs/bg3.jpeg"); */
-    background-size: calc(100%);
+    border: 1px solid aqua;
+    background-image: url("../../imgs/galaxy.webp");
+    background-size: calc(100%)+100%;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
@@ -83,11 +83,13 @@ h1:after, h2:after{
     width: 60vw;
     height: 60vh;
     overflow: auto;
-    background-color: #007bff16;
+    /* background-color: #ff006a38; */
     backdrop-filter: blur(5px);
+    color: #fff201;
 }
 .projectImgs{
     border-radius: 30px;
+    border: 3px solid aqua;
     display: flex;
     justify-content: center;
     width: 28rem;
@@ -105,8 +107,16 @@ h1:after, h2:after{
 .projectDesc{
     font-size: 1rem;
     margin: 1em;
-    border-bottom: 1px solid aqua;
-    color: white;
+    
+    color: rgb(255, 234, 0);
+    font-weight: 1000;
+}
+.projectDesc:after{
+    content: "";
+    display: block;
+    width: 50%;
+    padding-top: 20px;
+    border-bottom: 1px solid rgb(255, 234, 0);
 }
 #email{
     color: aqua;
