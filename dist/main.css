@@ -49,7 +49,24 @@
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(1, 128, 135);
   }
-
+.container-badges{
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    padding-top: 2em;
+}
+.extra-title{
+    color:aqua;
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+.stats{
+    color:white;
+    font-size: 1.2em;
+    
+}
 *
 {
     margin: 0;
@@ -148,6 +165,8 @@ h1:after, h2:after{
 }
 .projectImgs:hover{
     transform: scale(1.1);
+    border: 3px solid rgba(17, 240, 207, 0.874);
+    box-shadow: .5rem 0.5rem 0.5rem  rgba(134, 142, 139, 0.84);
     transition: 1.5s;
 }
 .projectTitle{
@@ -352,6 +371,7 @@ span{
 
 .me, .aboutme-list{
   text-align: center;
+  padding-top: 0.5em;
 }
 .me{
   font-size: 3em;
@@ -374,6 +394,13 @@ span{
   position: absolute;
   bottom: 1em;
   right: 1em;
+}
+.logo-background{
+  position: relative;
+  z-index: -100;
+  left: 50%;
+  top: -15em;
+  transform: translateX(-50%);
 }
 
 /*# sourceMappingURL=main.css.map*/

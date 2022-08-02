@@ -1,1 +1,0 @@
-fetch("https://www.codewars.com/api/v1/users/TLAMHutto").then((o=>o.json())).then((o=>{console.log(o.ranks.overall),o.ranks.overall.score})).catch((o=>console.log(o)));

@@ -1,0 +1,1 @@
+fetch("https://www.codewars.com/api/v1/users/TLAMHutto").then((e=>e.json())).then((e=>{let o=e.ranks.overall.score,a=e.ranks.overall.rank,n=e.ranks.overall.name;document.getElementById("codeWars").innerHTML="Score: "+o+" Rank: "+a+" Name: "+n,console.log(e.ranks.overall)})).catch((e=>console.log(e)));
