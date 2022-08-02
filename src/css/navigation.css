@@ -152,6 +152,7 @@ span{
 
 .me, .aboutme-list{
   text-align: center;
+  padding-top: 0.5em;
 }
 .me{
   font-size: 3em;
@@ -174,4 +175,11 @@ span{
   position: absolute;
   bottom: 1em;
   right: 1em;
+}
+.logo-background{
+  position: relative;
+  z-index: -100;
+  left: 50%;
+  top: -15em;
+  transform: translateX(-50%);
 }

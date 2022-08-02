@@ -99,6 +99,8 @@ h1:after, h2:after{
 }
 .projectImgs:hover{
     transform: scale(1.1);
+    border: 3px solid rgba(17, 240, 207, 0.874);
+    box-shadow: .5rem 0.5rem 0.5rem  rgba(134, 142, 139, 0.84);
     transition: 1.5s;
 }
 .projectTitle{
