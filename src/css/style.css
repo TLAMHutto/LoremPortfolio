@@ -86,6 +86,7 @@ h1:after, h2:after{
     /* background-color: #ff006a38; */
     backdrop-filter: blur(5px);
     color: #fff201;
+    z-index: 100;
 }
 .projectImgs{
     border-radius: 30px;
@@ -121,18 +122,27 @@ h1:after, h2:after{
 #email{
     color: aqua;
 }
+.bottom{
+    width: fit-content;
+    display: flex;
+    z-index: 0;
+}
 .contacts{
     position: absolute;
-    left: 10;
-    bottom: 0;
-    margin-bottom: 3rem;
+    left: 1em;
+    bottom: -3em;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    /* width: fit-content; */
 }
 .fa{
     color: aqua;
-    font-size: 48px;
+    font-size: 1em;
+    margin: 2em;
 }
 .fa-github{
-    font-size: 24px;
+    font-size: 1em;
 }
 .container-badges{
     /* transform: translateY(-300px);
