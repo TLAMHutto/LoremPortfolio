@@ -1,6 +1,6 @@
 @import "./animations.css";
 @import "./scrollBar.css";
-@import "./badge.css";
+
 *
 {
     margin: 0;
@@ -150,4 +150,22 @@ h1:after, h2:after{
     /* transform: translateY(-300px);
     z-index: 100;
     position: relative; */
+}
+.container-badges{
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    padding-top: 2em;
+}
+.extra-title{
+    color:aqua;
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+.stats{
+    color:white;
+    font-size: 1.2em;
+    
 }
