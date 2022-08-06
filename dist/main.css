@@ -58,7 +58,7 @@
 body{
     background-image: url(assets/images/21f884922c1ddf64.jpg);
     background-repeat: no-repeat;
-    
+    background-size:contain;
 }
 html{
     background-color: rgb(0, 0, 0)  ;
@@ -190,6 +190,15 @@ h1:after, h2:after{
     color: aqua;
     font-size: 1em;
     margin: 2em;
+}
+.fa:hover{
+    
+    text-shadow: 0 0 35px aqua;
+    transition: all 0.5s ease;
+}
+.fa:active{
+    transform: translateY(0.05em);
+    transition: .01s;
 }
 .fa-github{
     font-size: 1em;
@@ -401,6 +410,10 @@ span{
   left: 50%;
   top: -15em;
   transform: translateX(-50%);
+}
+#github{
+  color: aqua;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=main.css.map*/
