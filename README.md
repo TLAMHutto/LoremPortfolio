@@ -1,2 +1,2 @@
 # LoremPortfolio
-Deployed here: https://tlamhutto.github.io/LoremPortfolio/dist/
+Deployed here: https://www.keaton-kreations.com/dist/
