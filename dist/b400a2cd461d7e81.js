@@ -1,0 +1,1 @@
+export const plugins=[{resolve:"gatsby-plugin-google-analytics",options:{trackingId:324757238,head:!1,anonymize:!0,respectDNT:!0,exclude:["/preview/**","/do-not-track/me/too/"],pageTransitionDelay:0,defer:!1,sampleRate:5,siteSpeedSampleRate:10,enableWebVitalsTracking:!0}}];
