@@ -72,22 +72,23 @@ h1:after, h2:after{
 }
 .container{
     border: 1px solid aqua;
-    background-image: url("../../imgs/galaxy.webp");
+    /* background-image: url("../../imgs/galaxy.webp"); */
     background-size: calc(100%)+100%;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
     position: absolute;
-    bottom: -25%;
+    top: 170%;
     left: 35%;
     width: 60vw;
     height: 60vh;
     overflow: auto;
-    /* background-color: #ff006a38; */
+    background-color: #0033ff1b;
     backdrop-filter: blur(5px);
     color: #fff201;
     z-index: 100;
 }
+
 .projectImgs{
     border-radius: 30px;
     border: 3px solid aqua;
@@ -106,6 +107,7 @@ h1:after, h2:after{
 .projectTitle{
     text-align: center;
     margin: 1rem;
+    font-size: 1.5rem;
 }
 .projectDesc{
     font-size: 1rem;
@@ -177,4 +179,24 @@ h1:after, h2:after{
     color:white;
     font-size: 1.2em;
     
+}
+.select{
+    color: aqua;
+    background-color: rgba(0, 0, 0, 0.371);
+    font-size: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1em;
+    border: 1px solid aqua;
+    border-radius: 10px;
+}
+.select:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 255, 255, 0.529);
+    font-size: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1em;
+    text-shadow: 0 0 35px aqua;
+    transition: all 0.5s ease;
 }
