@@ -20,59 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Keaton Kreations</title>
     <link rel="shortcut icon" type="image/jpg" href="../imgs/path17.jpg" />
-    <style>
-        /* Hide the entire page initially */
-        body {
-            visibility: hidden;
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-
-        /* Loader style */
-        #loader {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            border-radius: 5px;
-            font-size: 1.2em;
-            z-index: 9999; /* Ensure loader is on top */
-        }
-
-        /* Loader visible style */
-        .loader-visible #loader {
-            display: block;
-        }
-
-        /* Show content after loader */
-        .content-visible {
-            visibility: visible;
-            opacity: 1;
-        }
-    </style>
-    <script>
-        function showLoaderAndRedirect() {
-            // Show the loader
-            document.body.classList.add('loader-visible');
-
-            // Set a timeout to hide the loader and show the content
-            setTimeout(() => {
-                // Hide loader
-                document.body.classList.remove('loader-visible');
-                // Show content
-                document.body.classList.add('content-visible');
-
-                // Optionally, redirect after the content is visible
-                window.location.href = 'https://tlamhutto.github.io/portfoliov2/';
-            }, 0); // Set your delay here (in milliseconds)
-        }
-
-        // Call the function on page load
-        window.onload = showLoaderAndRedirect;
-    </script>
+    
 </head>
 
 <body onload="showLoaderAndRedirect()">
